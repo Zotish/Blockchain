@@ -45,18 +45,18 @@ func CreateWallet(Password string) *str.Wallet {
 	}
 	return GetWalletInfo
 }
-func (privateKey *Wallet) GetPirvateKey(pass string) string {
+func (privateKey *str.Wallet) GetPirvateKey(pass string) string {
 	if privateKey.Password != pass {
 		return "Incorrect Password"
 	}
 	return privateKey.PrivateKey
 }
-func (pubKey *Wallet) GetPublicKey() string {
+func (pubKey *str.Wallet) GetPublicKey() string {
 	return pubKey.Publickey
 }
-func (address *Wallet) Receive() string {
+func (address *str.Wallet) Receive() string {
 	return address.Address
 }
-func (WalletNamep *Wallet) UpdateWallet(Name string) {
+func (WalletNamep *str.Wallet) UpdateWallet(Name string) {
 	WalletNamep.WalletName = Name
 }
