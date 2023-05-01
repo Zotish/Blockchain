@@ -9,15 +9,6 @@ import (
 	"main/str"
 )
 
-type Wallet struct {
-	WalletName string
-	PrivateKey string
-	Publickey  string
-	Address    string
-	Balance    uint64
-	Password   string
-}
-
 func GetCoinName(CN *str.Coin) string {
 	return CN.CoinName
 }

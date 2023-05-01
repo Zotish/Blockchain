@@ -7,10 +7,6 @@ import (
 )
 
 func main() {
-	//getName := function.GetCoinName(&str.Coin{CoinName: "Zotish"})
-	//getSmbole := function.GetSymbole(&str.Coin{Symbole: "ZTC"})
-	//getSupply := function.GetInitialSupply(&str.Coin{InitialSupply: 100000000})
-	//fmt.Println("", getName, getSmbole, getSupply)
 	wallet2 := function.CreateWallet("iDissapoint")
 	str.User = append(str.User, *wallet2)
 	fmt.Println("", wallet2.PrivateKey)
