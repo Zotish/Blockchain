@@ -2,18 +2,9 @@ package main
 
 import (
 	"fmt"
-	"function"
-	"str"
+	"main/function"
+	"main/str"
 )
-
-type Wallet struct {
-	WalletName string
-	PrivateKey string
-	Publickey  string
-	Address    string
-	Balance    uint64
-	Password   string
-}
 
 func main() {
 	//getName := function.GetCoinName(&str.Coin{CoinName: "Zotish"})
